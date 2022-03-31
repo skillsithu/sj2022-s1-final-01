@@ -1,0 +1,4 @@
+Adminisztrátor módban futtatott Powershell ablakban:
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+Utána adminisztrátor módban futtatott parancssorban:
+choco-install.cmd

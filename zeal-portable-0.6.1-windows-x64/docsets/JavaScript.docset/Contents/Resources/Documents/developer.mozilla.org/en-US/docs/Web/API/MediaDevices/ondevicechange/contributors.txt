@@ -1,0 +1,9 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/mediadevices/ondevicechange/index.md
+
+# Original Wiki contributors
+Sheppy
+fscholz
+dsanders11
+jpmedley
+stanislavys

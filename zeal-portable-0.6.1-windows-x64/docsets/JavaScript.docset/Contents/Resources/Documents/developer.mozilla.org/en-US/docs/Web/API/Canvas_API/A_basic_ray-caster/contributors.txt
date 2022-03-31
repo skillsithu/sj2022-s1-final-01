@@ -1,0 +1,13 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/canvas_api/a_basic_ray-caster/index.md
+
+# Original Wiki contributors
+post032
+sideshowbarker
+jacobkim116
+fscholz
+teoli
+Jeremie
+Sheppy
+kscarfone
+trevorh

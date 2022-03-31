@@ -1,0 +1,20 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/nodefilter/index.md
+
+# Original Wiki contributors
+lionel-rowe
+Zearin_Galaurum
+ExE-Boss
+jpmedley
+krosylight
+JonMarkPerry
+abbycar
+a0preetham
+fscholz
+kollishivagangadhar
+kennethcachia
+Jesse
+teoli
+Sheppy
+Brettz9
+RobG

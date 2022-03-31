@@ -1,0 +1,17 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/document/onbeforescriptexecute/index.md
+
+# Original Wiki contributors
+wbamberg
+fscholz
+valtlai
+teoli
+jsx
+kscarfone
+vishu_gawli
+nairakhil13
+Sheppy
+ethertank
+ziyunfei
+Midnightaz
+Johnjbarton

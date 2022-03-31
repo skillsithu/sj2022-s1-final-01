@@ -1,0 +1,50 @@
+<html><!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/date-settime.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:35:35 GMT --><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>JavaScript Demo: Date.setTime()</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../css/codemirror-5-50-2114d.css?v=a857922" rel="stylesheet">
+  <link href="../../css/editor-js114d.css?v=a857922" rel="stylesheet">
+  
+</head>
+
+<body>
+  <section id="static">
+    <pre><code id="static-js" data-height="">const event1 = new Date('July 1, 1999');
+const event2 = new Date();
+event2.setTime(event1.getTime());
+
+console.log(event1);
+// expected output: Thu Jul 01 1999 00:00:00 GMT+0200 (CEST)
+
+console.log(event2);
+// expected output: Thu Jul 01 1999 00:00:00 GMT+0200 (CEST)
+// (note: your timezone may vary)
+</code></pre>
+  </section>
+
+  <section id="live" class="live hidden">
+    <header>
+      <h4>JavaScript Demo: Date.setTime()</h4>
+    </header>
+    <div id="editor" class="editor"></div>
+
+    <div class="output-container">
+      <div class="buttons-container">
+        <button id="execute" class="button run" type="button">Run ›</button>
+        <button id="reset" type="button" class="button">Reset</button>
+      </div>
+      <div id="console" class="output"><code></code></div>
+    </div>
+  </section>
+
+  
+
+  <script src="../../js/codemirror-5-50-2114d.js?v=a857922"></script>
+  <script src="../../js/editor-js114d.js?v=a857922"></script>
+
+
+
+<!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/date-settime.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:35:35 GMT -->
+
+</body></html>

@@ -1,0 +1,773 @@
+<!doctype html>
+<!--[if IE 7 ]>		 <html class="no-js ie ie7 lte7 lte8 lte9"> lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>		 <html class="no-js ie ie8 lte8 lte9"> lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>		 <html class="no-js ie ie9 lte9"> lang="en-US"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+
+<!-- Mirrored from api.jquery.com/not/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 11:02:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head data-live-domain="api.jquery.com">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>.not()</title>
+
+	<meta name="author" content="JS Foundation - js.foundation">
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="shortcut icon" href="../../api.jquery.com_80/jquery-wp-content/themes/api.jquery.com/i/favicon.ico">
+
+	<link rel="stylesheet" href="../jquery-wp-content/themes/jquery/css/base30f4.css?v=3">
+	<link rel="stylesheet" href="../../api.jquery.com_80/jquery-wp-content/themes/api.jquery.com/style5e1f.css?v=2">
+
+	<script src="../jquery-wp-content/themes/jquery/js/modernizr.custom.2.8.3.min.js"></script>
+
+	<script src="../../code.jquery.com/jquery-1.11.3.js"></script>
+
+	<script src="../jquery-wp-content/themes/jquery/js/plugins.js"></script>
+	<script src="../jquery-wp-content/themes/jquery/js/main.js"></script>
+
+	<script src="../../use.typekit.net/wde1aof.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<!-- at the end of the HEAD -->
+	<link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/docsearch.js%402/dist/cdn/docsearch.min.css" />
+	<link rel="stylesheet" href="../jquery-wp-content/themes/jquery/css/docsearch.css">
+
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<meta name="generator" content="WordPress 4.5.2" />
+<link rel="alternate" type="application/json+oembed" href="http://api.jquery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fapi.jquery.com%2Fnot%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://api.jquery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fapi.jquery.com%2Fnot%2F&amp;format=xml" />
+
+</head>
+<body class="api jquery single single-post postid-449 single-format-standard single-author singular">
+
+<header>
+	<section id="global-nav">
+		<nav>
+			<div class="constrain">
+				<ul class="projects">
+					<li class="project jquery"><a href="https://jquery.com/" title="jQuery">jQuery</a></li>
+					<li class="project jquery-ui"><a href="https://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+					<li class="project jquery-mobile"><a href="https://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+					<li class="project sizzlejs"><a href="https://sizzlejs.com/" title="Sizzle">Sizzle</a></li>
+					<li class="project qunitjs"><a href="https://qunitjs.com/" title="QUnit">QUnit</a></li>
+				</ul>
+				<ul class="links">
+					<li><a href="https://plugins.jquery.com/">Plugins</a></li>
+					<li class="dropdown"><a href="https://contribute.jquery.org/">Contribute</a>
+						<ul>
+							<li><a href="https://js.foundation/CLA">CLA</a></li>
+							<li><a href="https://contribute.jquery.org/style-guide/">Style Guides</a></li>
+							<li><a href="https://contribute.jquery.org/triage/">Bug Triage</a></li>
+							<li><a href="https://contribute.jquery.org/code/">Code</a></li>
+							<li><a href="https://contribute.jquery.org/documentation/">Documentation</a></li>
+							<li><a href="https://contribute.jquery.org/web-sites/">Web Sites</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://js.foundation/events">Events</a>
+						<ul class="wide">
+																		</ul>
+					</li>
+					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
+						<ul>
+							<li><a href="https://learn.jquery.com/">Learning Center</a></li>
+							<li><a href="https://irc.jquery.org/">IRC/Chat</a></li>
+							<li><a href="https://forum.jquery.com/">Forums</a></li>
+							<li><a href="https://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
+							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://js.foundation/">JS Foundation</a>
+						<ul>
+							<li><a href="https://js.foundation/about/join">Join</a></li>
+							<li><a href="https://js.foundation/about/members">Members</a></li>
+							<li><a href="https://js.foundation/about/leadership">Leadership</a></li>
+							<li><a href="https://js.foundation/community/code-of-conduct">Conduct</a></li>
+							<li><a href="https://js.foundation/about/donate">Donate</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+</header>
+
+<div id="container">
+	<div id="logo-events" class="constrain clearfix">
+		<h2 class="logo"><a href="https://jquery.com/" title="jQuery API Documentation">jQuery API Documentation</a></h2>
+
+		<aside>
+			<div id="broadcast">
+				<a href="https://js.foundation/about/donate" title="Support the JS Foundation"><img src="../jquery-wp-content/themes/jquery/content/donate.png" title="Support the JS Foundation" alt="Support the JS Foundation" border="0" width="400" height="100"></a>
+			</div>
+		</aside>
+	</div>
+
+	<nav id="main" class="constrain clearfix">
+		<div class="menu-top-container">
+	<ul id="menu-top" class="menu">
+<li class="menu-item"><a href="https://jquery.com/download/">Download</a></li>
+<li class="menu-item current"><a href="../index.html">API Documentation</a></li>
+<li class="menu-item"><a href="https://blog.jquery.com/">Blog</a></li>
+<li class="menu-item"><a href="https://plugins.jquery.com/">Plugins</a></li>
+<li class="menu-item"><a href="https://jquery.com/browser-support/">Browser Support</a></li>
+	</ul>
+</div>
+
+		<form method="get" class="searchform" action="http://api.jquery.com/">
+	<button type="submit" class="icon-search"><span class="visuallyhidden">search</span></button>
+	<label>
+		<span class="visuallyhidden">Search jQuery API Documentation</span>
+		<input type="text" name="s" value=""
+			placeholder="Search">
+	</label>
+</form>
+	</nav>
+
+	<div id="content-wrapper" class="clearfix row">
+
+<div class="content-right twelve columns">
+	<div id="content">
+					
+<article id="post-449" class="post-449 post type-post status-publish format-standard hentry category-filtering category-miscellaneous-traversal category-65 category-75">
+	<header class="entry-header">
+		<h1 class="entry-title">.not()</h1>
+		<hr>
+				<div class="entry-meta">
+			Categories: <span class="category"><a href="../category/traversing/index.html">Traversing</a> &gt; <a href="../category/traversing/filtering/index.html">Filtering</a></span><span class="category-divider"> | </span><span class="category"><a href="../category/traversing/index.html">Traversing</a> &gt; <a href="../category/traversing/miscellaneous-traversal/index.html">Miscellaneous Traversing</a></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<article id="not1" class="entry method"><h2 class="section-title">
+<span class="name">.not( selector )</span><span class="returns">Returns: <a href="../Types/index.html#jQuery">jQuery</a></span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>Remove elements from the set of matched elements.</p>
+<ul class="signatures">
+<li class="signature">
+<h4 class="name">
+<span class="version-details">version added: <a href="../category/version/1.0/index.html">1.0</a></span><a id="not-selector" href="#not-selector"><span class="icon-link"></span>.not( selector )</a>
+</h4>
+<ul><li id="not-selector-selector">
+<div><strong>selector</strong></div>
+<div>Type: <a href="../Types/index.html#Selector">Selector</a> or <a href="../Types/index.html#Element">Element</a> or <a href="../Types/index.html#Array">Array</a>
+</div>
+<div>A string containing a selector expression, a DOM element, or an array of elements to match against the set.</div>
+</li></ul>
+</li>
+<li class="signature">
+<h4 class="name">
+<span class="version-details">version added: <a href="../category/version/1.4/index.html">1.4</a></span><a id="not-function" href="#not-function"><span class="icon-link"></span>.not( function )</a>
+</h4>
+<ul><li id="not-function-function">
+<div><strong>function</strong></div>
+<div>Type: <a href="../Types/index.html#Function">Function</a>( <a href="../Types/index.html#Integer">Integer</a> index, <a href="../Types/index.html#Element">Element</a> element )
+			=&gt;
+			<a href="../Types/index.html#Boolean">Boolean</a>
+</div>
+<div>A function used as a test for each element in the set. It accepts two arguments, <code>index</code>, which is the element&apos;s index in the jQuery collection, and <code>element</code>, which is the DOM element. Within the function, <code>this</code> refers to the current DOM element.</div>
+</li></ul>
+</li>
+<li class="signature">
+<h4 class="name">
+<span class="version-details">version added: <a href="../category/version/1.4/index.html">1.4</a></span><a id="not-selection" href="#not-selection"><span class="icon-link"></span>.not( selection )</a>
+</h4>
+<ul><li id="not-selection-selection">
+<div><strong>selection</strong></div>
+<div>Type: <a href="../Types/index.html#jQuery">jQuery</a>
+</div>
+<div>An existing jQuery object to match the current set of elements against.</div>
+</li></ul>
+</li>
+</ul>
+<div class="longdesc" id="entry-longdesc">
+    <p>Given a jQuery object that represents a set of DOM elements, the <code>.not()</code> method constructs a new jQuery object from a subset of the matching elements. The supplied selector is tested against each element; the elements that don&apos;t match the selector will be included in the result.</p>
+    <p>Consider a page with a simple list on it:</p>
+    <div class="syntaxhighlighter xml">
+	<table>
+		<tbody>
+			<tr>
+				
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+						<div class="line n4">4</div>
+					
+						<div class="line n5">5</div>
+					
+						<div class="line n6">6</div>
+					
+						<div class="line n7">7</div>
+					
+				</td>
+				
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 4<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 5<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+    <p>We can apply this method to the set of list items:</p>
+    <div class="syntaxhighlighter javascript">
+	<table>
+		<tbody>
+			<tr>
+				
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+				</td>
+				
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="hljs-string">&quot;li&quot;</span> ).not( <span class="hljs-string">&quot;:nth-child(2n)&quot;</span> ).css( <span class="hljs-string">&quot;background-color&quot;</span>, <span class="hljs-string">&quot;red&quot;</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+    <p>The result of this call is a red background for items 1, 3 and 5, as they do not match the selector.</p>
+    <h4>Removing Specific Elements</h4>
+    <p>The second version of the <code>.not()</code> method allows us to remove elements from the matched set, assuming we have found those elements previously by some other means. For example, suppose our list had an id applied to one of its items:</p>
+    <div class="syntaxhighlighter xml">
+	<table>
+		<tbody>
+			<tr>
+				
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+						<div class="line n4">4</div>
+					
+						<div class="line n5">5</div>
+					
+						<div class="line n6">6</div>
+					
+						<div class="line n7">7</div>
+					
+				</td>
+				
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;notli&quot;</span>&gt;</span>list item 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 4<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item 5<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+    <p>We can fetch the third list item using the native JavaScript <code>getElementById()</code> function, then remove it from a jQuery object:</p>
+    <div class="syntaxhighlighter javascript">
+	<table>
+		<tbody>
+			<tr>
+				
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+				</td>
+				
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="hljs-string">&quot;li&quot;</span> ).not( <span class="hljs-built_in">document</span>.getElementById( <span class="hljs-string">&quot;notli&quot;</span> ) )</code></div></div><div class="container"><div class="line"><code>  .css( <span class="hljs-string">&quot;background-color&quot;</span>, <span class="hljs-string">&quot;red&quot;</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+    <p>This statement changes the color of items 1, 2, 4, and 5. We could have accomplished the same thing with a simpler jQuery expression, but this technique can be useful when, for example, other libraries provide references to plain DOM nodes.</p>
+    <p>As of jQuery 1.4, the <code>.not()</code> method can take a function as its argument in the same way that <code>.filter()</code> does. Elements for which the function returns <code>true</code> are excluded from the filtered set; all other elements are included.</p>
+    <p><strong>Note:</strong> When a CSS selector string is passed to <code>.not()</code>, text and comment nodes will always be removed from the resulting jQuery object during the filtering process. When a specific node or array of nodes are provided, text or comment nodes will only be removed from the jQuery object if they match one of the nodes in the filtering array.</p>
+  </div>
+<section class="entry-examples" id="entry-examples"><header><h2>Examples:</h2></header><div class="entry-example" id="example-0">
+<p>Adds a border to divs that are not green or blue.</p>
+<div class="syntaxhighlighter xml">
+	<table>
+		<tbody>
+			<tr>
+				
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+						<div class="line n4">4</div>
+					
+						<div class="line n5">5</div>
+					
+						<div class="line n6">6</div>
+					
+						<div class="line n7">7</div>
+					
+						<div class="line n8">8</div>
+					
+						<div class="line n9">9</div>
+					
+						<div class="line n10">10</div>
+					
+						<div class="line n11">11</div>
+					
+						<div class="line n12">12</div>
+					
+						<div class="line n13">13</div>
+					
+						<div class="line n14">14</div>
+					
+						<div class="line n15">15</div>
+					
+						<div class="line n16">16</div>
+					
+						<div class="line n17">17</div>
+					
+						<div class="line n18">18</div>
+					
+						<div class="line n19">19</div>
+					
+						<div class="line n20">20</div>
+					
+						<div class="line n21">21</div>
+					
+						<div class="line n22">22</div>
+					
+						<div class="line n23">23</div>
+					
+						<div class="line n24">24</div>
+					
+						<div class="line n25">25</div>
+					
+						<div class="line n26">26</div>
+					
+						<div class="line n27">27</div>
+					
+						<div class="line n28">28</div>
+					
+						<div class="line n29">29</div>
+					
+						<div class="line n30">30</div>
+					
+						<div class="line n31">31</div>
+					
+						<div class="line n32">32</div>
+					
+						<div class="line n33">33</div>
+					
+						<div class="line n34">34</div>
+					
+						<div class="line n35">35</div>
+					
+						<div class="line n36">36</div>
+					
+						<div class="line n37">37</div>
+					
+						<div class="line n38">38</div>
+					
+						<div class="line n39">39</div>
+					
+						<div class="line n40">40</div>
+					
+						<div class="line n41">41</div>
+					
+						<div class="line n42">42</div>
+					
+						<div class="line n43">43</div>
+					
+				</td>
+				
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="hljs-meta">&lt;!doctype <span class="hljs-meta-keyword">html</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>not demo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"></span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-selector-tag">div</span> {</code></div></div><div class="container"><div class="line"><code>    <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;</code></div></div><div class="container"><div class="line"><code>    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;</code></div></div><div class="container"><div class="line"><code>    <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;</code></div></div><div class="container"><div class="line"><code>    <span class="hljs-attribute">float</span>: left;</code></div></div><div class="container"><div class="line"><code>    <span class="hljs-attribute">background</span>: yellow;</code></div></div><div class="container"><div class="line"><code>    <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid white;</code></div></div><div class="container"><div class="line"><code>  }</code></div></div><div class="container"><div class="line"><code>  <span class="hljs-selector-class">.green</span> {</code></div></div><div class="container"><div class="line"><code>    <span class="hljs-attribute">background</span>: <span class="hljs-number">#8f8</span>;</code></div></div><div class="container"><div class="line"><code>  }</code></div></div><div class="container"><div class="line"><code>  <span class="hljs-selector-class">.gray</span> {</code></div></div><div class="container"><div class="line"><code>    <span class="hljs-attribute">background</span>: <span class="hljs-number">#ccc</span>;</code></div></div><div class="container"><div class="line"><code>  }</code></div></div><div class="container"><div class="line"><code>  <span class="hljs-selector-id">#blueone</span> {</code></div></div><div class="container"><div class="line"><code>    <span class="hljs-attribute">background</span>: <span class="hljs-number">#99f</span>;</code></div></div><div class="container"><div class="line"><code>  }</code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;jquery-3.5.0.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;blueone&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;green&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;green&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="hljs-string">&quot;div&quot;</span> ).not( <span class="hljs-string">&quot;.green, #blueone&quot;</span> )</code></div></div><div class="container"><div class="line"><code>  .css( <span class="hljs-string">&quot;border-color&quot;</span>, <span class="hljs-string">&quot;red&quot;</span> );</code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h4>Demo:</h4>
+<div class="demo code-demo"></div>
+</div>
+<div class="entry-example" id="example-1">
+<p>Removes the element with the ID &quot;selected&quot; from the set of all paragraphs.</p>
+<div class="syntaxhighlighter javascript">
+	<table>
+		<tbody>
+			<tr>
+				
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+				</td>
+				
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="hljs-string">&quot;p&quot;</span> ).not( $( <span class="hljs-string">&quot;#selected&quot;</span> )[ <span class="hljs-number">0</span> ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div class="entry-example" id="example-2">
+<p>Removes the element with the ID &quot;selected&quot; from the set of all paragraphs.</p>
+<div class="syntaxhighlighter javascript">
+	<table>
+		<tbody>
+			<tr>
+				
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+				</td>
+				
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="hljs-string">&quot;p&quot;</span> ).not( <span class="hljs-string">&quot;#selected&quot;</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div class="entry-example" id="example-3">
+<p>Removes all elements that match &quot;div p.selected&quot; from the total set of all paragraphs.</p>
+<div class="syntaxhighlighter javascript">
+	<table>
+		<tbody>
+			<tr>
+				
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+				</td>
+				
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="hljs-string">&quot;p&quot;</span> ).not( $( <span class="hljs-string">&quot;div p.selected&quot;</span> ) );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div></section>
+</div></article>	</div><!-- .entry-content -->
+
+</article><!-- #post-449 -->
+			</div>
+
+	<div id="sidebar" class="widget-area" role="complementary">
+	<aside id="categories" class="widget">
+		<ul>
+				<li class="cat-item cat-item-1"><a href="../category/ajax/index.html" >Ajax</a>
+<ul class='children'>
+	<li class="cat-item cat-item-2"><a href="../category/ajax/global-ajax-event-handlers/index.html" >Global Ajax Event Handlers</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../category/ajax/helper-functions/index.html" >Helper Functions</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../category/ajax/low-level-interface/index.html" >Low-Level Interface</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/ajax/shorthand-methods/index.html" >Shorthand Methods</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/attributes/index.html" >Attributes</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/callbacks-object/index.html" >Callbacks Object</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../category/core/index.html" >Core</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../category/css/index.html" >CSS</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/data/index.html" >Data</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/deferred-object/index.html" >Deferred Object</a>
+</li>
+	<li class="cat-item cat-item-87"><a href="../category/deprecated/index.html" >Deprecated</a>
+<ul class='children'>
+	<li class="cat-item cat-item-90"><a href="../category/deprecated/deprecated-1.3/index.html" >Deprecated 1.3</a>
+</li>
+	<li class="cat-item cat-item-88"><a href="../category/deprecated/deprecated-1.7/index.html" >Deprecated 1.7</a>
+</li>
+	<li class="cat-item cat-item-89"><a href="../category/deprecated/deprecated-1.8/index.html" >Deprecated 1.8</a>
+</li>
+	<li class="cat-item cat-item-94"><a href="../category/deprecated/deprecated-1.9/index.html" >Deprecated 1.9</a>
+</li>
+	<li class="cat-item cat-item-93"><a href="../category/deprecated/deprecated-1.10/index.html" >Deprecated 1.10</a>
+</li>
+	<li class="cat-item cat-item-98"><a href="../category/deprecated/deprecated-3.0/index.html" >Deprecated 3.0</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="../category/deprecated/deprecated-3.2/index.html" >Deprecated 3.2</a>
+</li>
+	<li class="cat-item cat-item-99"><a href="../category/deprecated/deprecated-3.3/index.html" >Deprecated 3.3</a>
+</li>
+	<li class="cat-item cat-item-100"><a href="../category/deprecated/deprecated-3.4/index.html" >Deprecated 3.4</a>
+</li>
+	<li class="cat-item cat-item-102"><a href="../category/deprecated/deprecated-3.5/index.html" >Deprecated 3.5</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-12"><a href="../category/dimensions/index.html" >Dimensions</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../category/effects/index.html" >Effects</a>
+<ul class='children'>
+	<li class="cat-item cat-item-14"><a href="../category/effects/basics/index.html" >Basics</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/effects/custom-effects/index.html" >Custom</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../category/effects/fading/index.html" >Fading</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../category/effects/sliding/index.html" >Sliding</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-18"><a href="../category/events/index.html" >Events</a>
+<ul class='children'>
+	<li class="cat-item cat-item-19"><a href="../category/events/browser-events/index.html" >Browser Events</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../category/events/document-loading/index.html" >Document Loading</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../category/events/event-handler-attachment/index.html" >Event Handler Attachment</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../category/events/event-object/index.html" >Event Object</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../category/events/form-events/index.html" >Form Events</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="../category/events/keyboard-events/index.html" >Keyboard Events</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="../category/events/mouse-events/index.html" >Mouse Events</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-26"><a href="../category/forms/index.html" >Forms</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="../category/internals/index.html" >Internals</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="../category/manipulation/index.html" >Manipulation</a>
+<ul class='children'>
+	<li class="cat-item cat-item-29"><a href="../category/manipulation/class-attribute/index.html" >Class Attribute</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="../category/manipulation/copying/index.html" >Copying</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="../category/manipulation/dom-insertion-around/index.html" >DOM Insertion, Around</a>
+</li>
+	<li class="cat-item cat-item-33"><a href="../category/manipulation/dom-insertion-inside/index.html" >DOM Insertion, Inside</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="../category/manipulation/dom-insertion-outside/index.html" >DOM Insertion, Outside</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="../category/manipulation/dom-removal/index.html" >DOM Removal</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="../category/manipulation/dom-replacement/index.html" >DOM Replacement</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="../category/manipulation/general-attributes/index.html" >General Attributes</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="../category/manipulation/style-properties/index.html" >Style Properties</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-39"><a href="../category/miscellaneous/index.html" >Miscellaneous</a>
+<ul class='children'>
+	<li class="cat-item cat-item-40"><a href="../category/miscellaneous/collection-manipulation/index.html" >Collection Manipulation</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="../category/miscellaneous/data-storage/index.html" >Data Storage</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="../category/miscellaneous/dom-element-methods/index.html" >DOM Element Methods</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="../category/miscellaneous/setup-methods/index.html" >Setup Methods</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-44"><a href="../category/offset/index.html" >Offset</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="../category/properties/index.html" >Properties</a>
+<ul class='children'>
+	<li class="cat-item cat-item-46"><a href="../category/properties/jquery-object-instance-properties/index.html" >Properties of jQuery Object Instances</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="../category/properties/global-jquery-object-properties/index.html" >Properties of the Global jQuery Object</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-92"><a href="../category/removed/index.html" >Removed</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="../category/selectors/index.html" >Selectors</a>
+<ul class='children'>
+	<li class="cat-item cat-item-49"><a href="../category/selectors/attribute-selectors/index.html" >Attribute</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="../category/selectors/basic-css-selectors/index.html" >Basic</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="../category/selectors/basic-filter-selectors/index.html" >Basic Filter</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="../category/selectors/child-filter-selectors/index.html" >Child Filter</a>
+</li>
+	<li class="cat-item cat-item-53"><a href="../category/selectors/content-filter-selector/index.html" >Content Filter</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="../category/selectors/form-selectors/index.html" >Form</a>
+</li>
+	<li class="cat-item cat-item-55"><a href="../category/selectors/hierarchy-selectors/index.html" >Hierarchy</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="../category/selectors/jquery-selector-extensions/index.html" >jQuery Extensions</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="../category/selectors/visibility-filter-selectors/index.html" >Visibility Filter</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-58 current-cat-parent current-cat-ancestor"><a href="../category/traversing/index.html" >Traversing</a>
+<ul class='children'>
+	<li class="cat-item cat-item-59 current-cat"><a href="../category/traversing/filtering/index.html" >Filtering</a>
+</li>
+	<li class="cat-item cat-item-60"><a href="../category/traversing/miscellaneous-traversal/index.html" >Miscellaneous Traversing</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="../category/traversing/tree-traversal/index.html" >Tree Traversal</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-63"><a href="../category/utilities/index.html" >Utilities</a>
+</li>
+	<li class="cat-item cat-item-64"><a href="../category/version/index.html" >Version</a>
+<ul class='children'>
+	<li class="cat-item cat-item-65"><a href="../category/version/1.0/index.html" >Version 1.0</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="../category/version/1.0.4/index.html" >Version 1.0.4</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="../category/version/1.1/index.html" >Version 1.1</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="../category/version/1.1.2/index.html" >Version 1.1.2</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="../category/version/1.1.3/index.html" >Version 1.1.3</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="../category/version/1.1.4/index.html" >Version 1.1.4</a>
+</li>
+	<li class="cat-item cat-item-71"><a href="../category/version/1.2/index.html" >Version 1.2</a>
+</li>
+	<li class="cat-item cat-item-72"><a href="../category/version/1.2.3/index.html" >Version 1.2.3</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="../category/version/1.2.6/index.html" >Version 1.2.6</a>
+</li>
+	<li class="cat-item cat-item-74"><a href="../category/version/1.3/index.html" >Version 1.3</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="../category/version/1.4/index.html" >Version 1.4</a>
+</li>
+	<li class="cat-item cat-item-76"><a href="../category/version/1.4.1/index.html" >Version 1.4.1</a>
+</li>
+	<li class="cat-item cat-item-77"><a href="../category/version/1.4.2/index.html" >Version 1.4.2</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="../category/version/1.4.3/index.html" >Version 1.4.3</a>
+</li>
+	<li class="cat-item cat-item-79"><a href="../category/version/1.4.4/index.html" >Version 1.4.4</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="../category/version/1.5/index.html" >Version 1.5</a>
+</li>
+	<li class="cat-item cat-item-81"><a href="../category/version/1.5.1/index.html" >Version 1.5.1</a>
+</li>
+	<li class="cat-item cat-item-82"><a href="../category/version/1.6/index.html" >Version 1.6</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="../category/version/1.7/index.html" >Version 1.7</a>
+</li>
+	<li class="cat-item cat-item-84"><a href="../category/version/1.8/index.html" >Version 1.8</a>
+</li>
+	<li class="cat-item cat-item-86"><a href="../category/version/1.9/index.html" >Version 1.9</a>
+</li>
+	<li class="cat-item cat-item-103"><a href="../category/version/1.12-and-2.2/index.html" >Version 1.12 &amp; 2.2</a>
+</li>
+	<li class="cat-item cat-item-95"><a href="../category/version/3.0/index.html" >Version 3.0</a>
+</li>
+	<li class="cat-item cat-item-96"><a href="../category/version/3.1/index.html" >Version 3.1</a>
+</li>
+	<li class="cat-item cat-item-104"><a href="../category/version/3.2/index.html" >Version 3.2</a>
+</li>
+	<li class="cat-item cat-item-105"><a href="../category/version/3.3/index.html" >Version 3.3</a>
+</li>
+	<li class="cat-item cat-item-106"><a href="../category/version/3.4/index.html" >Version 3.4</a>
+</li>
+	<li class="cat-item cat-item-107"><a href="../category/version/3.5/index.html" >Version 3.5</a>
+</li>
+</ul>
+</li>
+		</ul>
+	</aside>
+</div>
+</div>
+	</div>
+</div>
+
+<footer class="clearfix simple">
+	<div class="constrain">
+		<div class="row">
+			<div class="six columns offset-by-three">
+				<h3><span>Books</span></h3>
+				<ul class="books">
+					<li>
+						<a href="https://www.packtpub.com/web-development/learning-jquery-fourth-edition">
+							<img src="../jquery-wp-content/themes/jquery/content/books/learning-jquery-4th-ed.jpg" alt="Learning jQuery 4th Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114">
+							Learning jQuery Fourth Edition
+							<cite>Karl Swedberg and Jonathan Chaffer</cite>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.manning.com/books/jquery-in-action-third-edition">
+							<img src="../jquery-wp-content/themes/jquery/content/books/jquery-in-action.jpg" alt="jQuery in Action by Bear Bibeault, Yehuda Katz, and Aurelio De Rosa" width="92" height="114">
+							jQuery in Action
+							<cite>Bear Bibeault, Yehuda Katz, and Aurelio De Rosa</cite>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.syncfusion.com/ebooks/jquery">
+							<img src="../jquery-wp-content/themes/jquery/content/books/jquery-succinctly.jpg" alt="jQuery Succinctly by Cody Lindley" width="92" height="114">
+							jQuery Succinctly
+							<cite>Cody Lindley</cite>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		
+<div id="legal">
+	<ul class="footer-site-links">
+			<li><a class="icon-pencil" href="https://learn.jquery.com/">Learning Center</a></li>
+			<li><a class="icon-group" href="https://forum.jquery.com/">Forum</a></li>
+			<li><a class="icon-wrench" href="../index.html">API</a></li>
+			<li><a class="icon-twitter" href="https://twitter.com/jquery">Twitter</a></li>
+			<li><a class="icon-comments" href="https://irc.jquery.org/">IRC</a></li>
+			<li><a class="icon-github" href="https://github.com/jquery">GitHub</a></li>
+	</ul>
+	<p class="copyright">
+		Copyright 2022 <a href="https://openjsf.org/">OpenJS Foundation</a> and jQuery contributors. All rights reserved. See <a href="https://jquery.org/license/">jQuery License</a> for more information. The <a href="https://openjsf.org/">OpenJS Foundation</a> has registered trademarks and uses trademarks. For a list of trademarks of the <a href="https://openjsf.org/">OpenJS Foundation</a>, please see our <a href="https://trademark-policy.openjsf.org/">Trademark Policy</a> and <a href="https://trademark-list.openjsf.org/">Trademark List</a>. Trademarks and logos not indicated on the <a href="https://trademark-list.openjsf.org/">list of OpenJS Foundation trademarks</a> are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them. OpenJS Foundation <a href="https://terms-of-use.openjsf.org/">Terms of Use</a>, <a href="https://privacy-policy.openjsf.org/">Privacy</a>, and <a href="https://www.linuxfoundation.org/cookies">Cookie</a> Policies also apply.
+		<span class="sponsor-line"><a href="https://www.digitalocean.com/" class="do-link">Web hosting by Digital Ocean</a> | <a href="https://www.stackpath.com/" class="sp-link">CDN by StackPath</a></span>
+	</p>
+</div>
+
+	</div>
+</footer>
+
+<script type='text/javascript' src='../wp-includes/js/comment-reply.min3428.js?ver=4.5.2'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min3428.js?ver=4.5.2'></script>
+	<!-- at the end of the BODY -->
+	<script type="text/javascript" src="../../cdn.jsdelivr.net/npm/docsearch.js%402/dist/cdn/docsearch.min.js"  onload="document.querySelector('input[name=\'s\']') && docsearch({apiKey: '3cfde9aca378c8aab554d5bf1b23489b',
+		indexName: 'jquery',
+		inputSelector: 'input[name=\'s\']',
+		debug: true // Set debug to true if you want to inspect the dropdown
+	})" async></script>
+</body>
+
+<!-- Mirrored from api.jquery.com/not/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 11:02:21 GMT -->
+</html>

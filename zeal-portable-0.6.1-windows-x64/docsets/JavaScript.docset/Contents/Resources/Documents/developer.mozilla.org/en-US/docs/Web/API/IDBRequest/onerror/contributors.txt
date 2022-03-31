@@ -1,0 +1,12 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/idbrequest/onerror/index.md
+
+# Original Wiki contributors
+sideshowbarker
+vitaly-zdanevich
+fscholz
+jpmedley
+libbymc
+rolfedh
+robincafolla
+chrisdavidmills

@@ -1,0 +1,22 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/file_handle_api/index.md
+
+# Original Wiki contributors
+fscholz
+teoli
+duncancumming
+chrisdavidmills
+Sebastianz
+mrbrc
+tangxiaobaobao
+mxtbcca
+SpencerG
+Nickolay
+sizvix
+kscarfone
+Jeremie
+dron
+Sheppy
+ethertank
+zombie
+dbruant

@@ -1,0 +1,11 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/window/onappinstalled/index.md
+
+# Original Wiki contributors
+Oaphi
+sideshowbarker
+wbamberg
+chrisdavidmills
+marcoscaceres
+fscholz
+teoli

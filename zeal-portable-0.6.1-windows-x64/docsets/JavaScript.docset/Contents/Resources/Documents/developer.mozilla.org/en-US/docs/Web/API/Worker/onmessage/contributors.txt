@@ -1,0 +1,12 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/worker/onmessage/index.md
+
+# Original Wiki contributors
+fscholz
+Christian_S
+ExE-Boss
+erikadoyle
+nmve
+teoli
+chrisdavidmills
+kscarfone

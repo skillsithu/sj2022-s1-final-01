@@ -1,0 +1,14 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/tools/page_inspector/how_to/edit_css_shapes/index.html
+
+# Original Wiki contributors
+irenesmith
+Loliwe
+mjibrower
+mikaelbr
+wbamberg
+chrisdavidmills
+rachelandrew
+Skierpage
+jensimmons
+Callahad

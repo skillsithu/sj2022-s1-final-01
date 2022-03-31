@@ -1,0 +1,15 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/css/css_properties_reference/index.md
+
+# Original Wiki contributors
+Tet
+wbamberg
+chrisdavidmills
+mfuji09
+LouisLazaris
+bekahmcdonald
+Sheppy
+hendryl
+Justdave
+velvel53
+ernestd

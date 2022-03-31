@@ -1,0 +1,49 @@
+<html><!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/string-replace.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:30:08 GMT --><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>JavaScript Demo: String.replace()</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../css/codemirror-5-50-2114d.css?v=a857922" rel="stylesheet">
+  <link href="../../css/editor-js114d.css?v=a857922" rel="stylesheet">
+  
+</head>
+
+<body>
+  <section id="static">
+    <pre><code id="static-js" data-height="">const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+
+console.log(p.replace('dog', 'monkey'));
+// expected output: "The quick brown fox jumps over the lazy monkey. If the dog reacted, was it really lazy?"
+
+
+const regex = /Dog/i;
+console.log(p.replace(regex, 'ferret'));
+// expected output: "The quick brown fox jumps over the lazy ferret. If the dog reacted, was it really lazy?"
+</code></pre>
+  </section>
+
+  <section id="live" class="live hidden">
+    <header>
+      <h4>JavaScript Demo: String.replace()</h4>
+    </header>
+    <div id="editor" class="editor"></div>
+
+    <div class="output-container">
+      <div class="buttons-container">
+        <button id="execute" class="button run" type="button">Run ›</button>
+        <button id="reset" type="button" class="button">Reset</button>
+      </div>
+      <div id="console" class="output"><code></code></div>
+    </div>
+  </section>
+
+  
+
+  <script src="../../js/codemirror-5-50-2114d.js?v=a857922"></script>
+  <script src="../../js/editor-js114d.js?v=a857922"></script>
+
+
+
+<!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/string-replace.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:30:08 GMT -->
+
+</body></html>

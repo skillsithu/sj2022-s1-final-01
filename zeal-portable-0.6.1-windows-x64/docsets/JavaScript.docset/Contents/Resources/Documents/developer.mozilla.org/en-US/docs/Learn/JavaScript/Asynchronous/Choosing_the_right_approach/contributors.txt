@@ -1,0 +1,11 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/learn/javascript/asynchronous/choosing_the_right_approach/index.md
+
+# Original Wiki contributors
+JohnnyMu-Cn
+vgiffin
+chrisdavidmills
+kruschk
+tywmick
+enejko
+Sheppy

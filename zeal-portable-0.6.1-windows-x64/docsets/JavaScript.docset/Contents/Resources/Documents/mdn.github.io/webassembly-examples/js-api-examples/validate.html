@@ -1,0 +1,21 @@
+<html><!-- Mirrored from mdn.github.io/webassembly-examples/js-api-examples/validate.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 19:11:30 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+    <meta charset="utf-8">
+    <title>WASM validate() test</title>
+  </head>
+
+  <body>
+    <script>
+      fetch('simple.wasm').then(response =>
+        response.arrayBuffer()
+      ).then(function(bytes) {
+        var valid = WebAssembly.validate(bytes);
+        console.log("The given bytes are " + (valid ? "" : "not ") + "a valid wasm module");
+      });
+    </script>
+  
+
+
+<!-- Mirrored from mdn.github.io/webassembly-examples/js-api-examples/validate.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 19:11:30 GMT -->
+
+</body></html>

@@ -1,0 +1,12 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/idbtransaction/oncomplete/index.md
+
+# Original Wiki contributors
+jorendorff-moz
+sideshowbarker
+wbamberg
+CITguy
+chrisdavidmills
+fscholz
+jpmedley
+libbymc

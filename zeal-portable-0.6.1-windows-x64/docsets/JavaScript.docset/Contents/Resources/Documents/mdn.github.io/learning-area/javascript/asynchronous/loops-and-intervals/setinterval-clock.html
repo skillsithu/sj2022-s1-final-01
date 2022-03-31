@@ -1,0 +1,27 @@
+<html><!-- Mirrored from mdn.github.io/learning-area/javascript/asynchronous/loops-and-intervals/setinterval-clock.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:31:47 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+    <meta charset="utf-8">
+    <title>Simple setInterval clock</title>
+    <style>
+      p {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="clock">14:59:38</p>
+    <script>
+      function displayTime() {
+        let date = new Date();
+        let time = date.toLocaleTimeString();
+        document.querySelector('.clock').textContent = time;
+      }
+
+      displayTime();
+      const createClock = setInterval(displayTime, 1000);
+    </script>
+  
+
+<!-- Mirrored from mdn.github.io/learning-area/javascript/asynchronous/loops-and-intervals/setinterval-clock.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:31:47 GMT -->
+
+</body></html>

@@ -1,0 +1,13 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/xmlhttprequesteventtarget/onprogress/index.md
+
+# Original Wiki contributors
+eltociear
+ExE-Boss
+sheeldotme
+yan
+erikadoyle
+nekjine
+donnapep
+teoli
+Taoja

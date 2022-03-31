@@ -1,0 +1,20 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/globaleventhandlers/ondblclick/index.md
+
+# Original Wiki contributors
+mfluehr
+fscholz
+erikadoyle
+jpmedley
+cvrebert
+Sebastianz
+teoli
+MHasan
+avivas
+kscarfone
+Sheppy
+ziyunfei
+Pitoutompoilu
+Jabez
+Dria
+JesseW

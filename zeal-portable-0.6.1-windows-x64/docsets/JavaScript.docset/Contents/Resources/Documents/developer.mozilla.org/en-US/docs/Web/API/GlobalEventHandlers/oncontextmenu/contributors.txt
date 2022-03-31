@@ -1,0 +1,21 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/globaleventhandlers/oncontextmenu/index.md
+
+# Original Wiki contributors
+irenesmith
+mfluehr
+sideshowbarker
+fscholz
+erikadoyle
+jpmedley
+cvrebert
+Skoua
+teoli
+kosvrouvas
+kscarfone
+Sheppy
+ethertank
+Brettz9
+ziyunfei
+Rob W
+Ryatt

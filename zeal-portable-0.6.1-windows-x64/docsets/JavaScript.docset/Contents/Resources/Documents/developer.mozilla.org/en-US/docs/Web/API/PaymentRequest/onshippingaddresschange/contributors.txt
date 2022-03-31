@@ -1,0 +1,10 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/paymentrequest/onshippingaddresschange/index.md
+
+# Original Wiki contributors
+Sheppy
+samouss
+fscholz
+jpmedley
+chrisdavidmills
+dgashmdn

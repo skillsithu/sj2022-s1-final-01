@@ -1,0 +1,6 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/rtcicecandidatepairstats/circuitbreakertriggercount/index.md
+
+# Original Wiki contributors
+bradley27783
+Sheppy

@@ -1,0 +1,13 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/window/dialogarguments/index.md
+
+# Original Wiki contributors
+fscholz
+david_ross
+sarafec
+cesarandreu
+teoli
+kscarfone
+ethertank
+Sheppy
+Matej Lednar

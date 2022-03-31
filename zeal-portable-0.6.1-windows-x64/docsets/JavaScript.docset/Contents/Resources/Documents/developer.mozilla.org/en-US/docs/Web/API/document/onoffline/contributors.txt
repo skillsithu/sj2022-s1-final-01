@@ -1,0 +1,7 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/document/onoffline/index.md
+
+# Original Wiki contributors
+mfluehr
+teoli
+jsx

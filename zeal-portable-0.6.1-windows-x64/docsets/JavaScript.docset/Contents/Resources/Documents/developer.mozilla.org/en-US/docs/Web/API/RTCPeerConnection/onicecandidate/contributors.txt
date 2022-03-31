@@ -1,0 +1,13 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/rtcpeerconnection/onicecandidate/index.md
+
+# Original Wiki contributors
+sideshowbarker
+Sheppy
+betimer
+fscholz
+jpmedley
+abbycar
+nils
+teoli
+rmnguleria

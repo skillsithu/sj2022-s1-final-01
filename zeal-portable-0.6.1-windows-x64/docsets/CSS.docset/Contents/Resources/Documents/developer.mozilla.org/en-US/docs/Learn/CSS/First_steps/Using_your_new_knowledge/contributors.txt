@@ -1,0 +1,9 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/learn/css/first_steps/using_your_new_knowledge/index.md
+
+# Original Wiki contributors
+schalkneethling
+hakantr
+salutis
+chrisdavidmills
+rachelandrew

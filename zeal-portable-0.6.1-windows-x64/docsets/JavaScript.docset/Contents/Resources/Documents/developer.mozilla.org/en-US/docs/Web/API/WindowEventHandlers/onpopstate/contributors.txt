@@ -1,0 +1,25 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/windoweventhandlers/onpopstate/index.md
+
+# Original Wiki contributors
+mfuji09
+irenesmith
+chrisdavidmills
+mfluehr
+fscholz
+david_ross
+greggawatt
+jsx
+Oliver_Schafeld
+kscarfone
+andrewpmckenzie
+teoli
+libreGeekingKid
+ethertank
+Sheppy
+fusionchess
+jlebar
+ziyunfei
+Husky
+feross
+Rik

@@ -1,0 +1,11 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/arraybufferview/index.md
+
+# Original Wiki contributors
+aduh95
+yegao
+mfluehr
+TimothyGu
+Jeremie
+fscholz
+teoli

@@ -1,0 +1,14 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/idbopendbrequest/onupgradeneeded/index.md
+
+# Original Wiki contributors
+realityforge
+sideshowbarker
+wbamberg
+fscholz
+lukaselmer
+jpmedley
+libbymc
+chrisdavidmills
+teoli
+freaktechnik

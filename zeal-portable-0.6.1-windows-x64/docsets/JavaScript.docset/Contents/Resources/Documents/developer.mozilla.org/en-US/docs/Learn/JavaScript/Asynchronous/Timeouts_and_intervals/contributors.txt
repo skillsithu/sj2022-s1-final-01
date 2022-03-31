@@ -1,0 +1,15 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/learn/javascript/asynchronous/timeouts_and_intervals/index.md
+
+# Original Wiki contributors
+Rafael_Green
+chrisdavidmills
+A.Faturechi
+nkalvi
+mariusmucenicu
+Zearin_Galaurum
+ZhenWang-Jen
+jeffro94
+tashpool
+Sheppy
+k-lusine

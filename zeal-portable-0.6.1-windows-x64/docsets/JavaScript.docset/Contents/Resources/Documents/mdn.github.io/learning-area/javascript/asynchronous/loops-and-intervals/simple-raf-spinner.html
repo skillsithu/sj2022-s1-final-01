@@ -1,0 +1,65 @@
+<html><!-- Mirrored from mdn.github.io/learning-area/javascript/asynchronous/loops-and-intervals/simple-raf-spinner.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:31:48 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+    <meta charset="utf-8">
+    <title>requestAnimationFrame spinner example</title>
+    <style>
+      html {
+        background-color: white;
+        height: 100%;
+      }
+
+      body {
+        height: inherit;
+        background-color: red;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      div {
+        display: inline-block;
+        font-size: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div>↻</div>
+    <script>
+
+      // Store reference to the div element, create a rotate counter and null startTime
+      // and create an uninitialized variable to store the requestAnimationFrame() call in
+      const spinner = document.querySelector('div');
+      let rotateCount = 0;
+      let startTime = null;
+      let rAF;
+
+      // Create a draw() function
+      function draw(timestamp) {
+        if(!startTime) {
+         startTime = timestamp;
+        }
+
+        rotateCount = (timestamp - startTime) / 3;
+
+        // If rotateCount gets over 359, set it to 'remainder of dividing by 360'
+        if(rotateCount > 359) {
+          rotateCount %= 360;
+        }
+
+        // Set the rotation of the div to be equal to rotateCount degrees
+        spinner.style.transform = 'rotate(' + rotateCount + 'deg)';
+
+        // Call the next frame in the animation
+        rAF = requestAnimationFrame(draw);
+      }
+
+      draw();
+
+    </script>
+  
+
+<!-- Mirrored from mdn.github.io/learning-area/javascript/asynchronous/loops-and-intervals/simple-raf-spinner.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:31:48 GMT -->
+
+</body></html>

@@ -1,0 +1,29 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/windoweventhandlers/onhashchange/index.md
+
+# Original Wiki contributors
+fscholz
+smoore4usa
+mfluehr
+sideshowbarker
+carolinekabat
+jcamenisch
+xgqfrms
+douira
+jpmedley
+tobias74
+erikadoyle
+fuweichin
+teoli
+Taken
+libreGeekingKid
+leon_gilyadov
+Sheppy
+ethertank
+ziyunfei
+McGurk
+Jürgen Jeka
+Crash
+Nickolay
+jlebar
+Sephr

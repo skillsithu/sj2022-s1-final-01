@@ -1,0 +1,689 @@
+<!doctype html>
+<!--[if IE 7 ]>		 <html class="no-js ie ie7 lte7 lte8 lte9"> lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>		 <html class="no-js ie ie8 lte8 lte9"> lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>		 <html class="no-js ie ie9 lte9"> lang="en-US"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+
+<!-- Mirrored from api.jquery.com/category/ajax/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 11:01:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head data-live-domain="api.jquery.com">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Ajax</title>
+
+	<meta name="author" content="JS Foundation - js.foundation">
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="shortcut icon" href="../../../api.jquery.com_80/jquery-wp-content/themes/api.jquery.com/i/favicon.ico">
+
+	<link rel="stylesheet" href="../../jquery-wp-content/themes/jquery/css/base30f4.css?v=3">
+	<link rel="stylesheet" href="../../../api.jquery.com_80/jquery-wp-content/themes/api.jquery.com/style5e1f.css?v=2">
+
+	<script src="../../jquery-wp-content/themes/jquery/js/modernizr.custom.2.8.3.min.js"></script>
+
+	<script src="../../../code.jquery.com/jquery-1.11.3.js"></script>
+
+	<script src="../../jquery-wp-content/themes/jquery/js/plugins.js"></script>
+	<script src="../../jquery-wp-content/themes/jquery/js/main.js"></script>
+
+	<script src="../../../use.typekit.net/wde1aof.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<!-- at the end of the HEAD -->
+	<link rel="stylesheet" href="../../../cdn.jsdelivr.net/npm/docsearch.js%402/dist/cdn/docsearch.min.css" />
+	<link rel="stylesheet" href="../../jquery-wp-content/themes/jquery/css/docsearch.css">
+
+<link rel='https://api.w.org/' href='../../wp-json/index.html' />
+<meta name="generator" content="WordPress 4.5.2" />
+
+</head>
+<body class="api jquery archive category category-ajax category-1 listing single-author">
+
+<header>
+	<section id="global-nav">
+		<nav>
+			<div class="constrain">
+				<ul class="projects">
+					<li class="project jquery"><a href="https://jquery.com/" title="jQuery">jQuery</a></li>
+					<li class="project jquery-ui"><a href="https://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+					<li class="project jquery-mobile"><a href="https://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+					<li class="project sizzlejs"><a href="https://sizzlejs.com/" title="Sizzle">Sizzle</a></li>
+					<li class="project qunitjs"><a href="https://qunitjs.com/" title="QUnit">QUnit</a></li>
+				</ul>
+				<ul class="links">
+					<li><a href="https://plugins.jquery.com/">Plugins</a></li>
+					<li class="dropdown"><a href="https://contribute.jquery.org/">Contribute</a>
+						<ul>
+							<li><a href="https://js.foundation/CLA">CLA</a></li>
+							<li><a href="https://contribute.jquery.org/style-guide/">Style Guides</a></li>
+							<li><a href="https://contribute.jquery.org/triage/">Bug Triage</a></li>
+							<li><a href="https://contribute.jquery.org/code/">Code</a></li>
+							<li><a href="https://contribute.jquery.org/documentation/">Documentation</a></li>
+							<li><a href="https://contribute.jquery.org/web-sites/">Web Sites</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://js.foundation/events">Events</a>
+						<ul class="wide">
+																		</ul>
+					</li>
+					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
+						<ul>
+							<li><a href="https://learn.jquery.com/">Learning Center</a></li>
+							<li><a href="https://irc.jquery.org/">IRC/Chat</a></li>
+							<li><a href="https://forum.jquery.com/">Forums</a></li>
+							<li><a href="https://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
+							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://js.foundation/">JS Foundation</a>
+						<ul>
+							<li><a href="https://js.foundation/about/join">Join</a></li>
+							<li><a href="https://js.foundation/about/members">Members</a></li>
+							<li><a href="https://js.foundation/about/leadership">Leadership</a></li>
+							<li><a href="https://js.foundation/community/code-of-conduct">Conduct</a></li>
+							<li><a href="https://js.foundation/about/donate">Donate</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+</header>
+
+<div id="container">
+	<div id="logo-events" class="constrain clearfix">
+		<h2 class="logo"><a href="https://jquery.com/" title="jQuery API Documentation">jQuery API Documentation</a></h2>
+
+		<aside>
+			<div id="broadcast">
+				<a href="https://js.foundation/about/donate" title="Support the JS Foundation"><img src="../../jquery-wp-content/themes/jquery/content/donate.png" title="Support the JS Foundation" alt="Support the JS Foundation" border="0" width="400" height="100"></a>
+			</div>
+		</aside>
+	</div>
+
+	<nav id="main" class="constrain clearfix">
+		<div class="menu-top-container">
+	<ul id="menu-top" class="menu">
+<li class="menu-item"><a href="https://jquery.com/download/">Download</a></li>
+<li class="menu-item current"><a href="../../index.html">API Documentation</a></li>
+<li class="menu-item"><a href="https://blog.jquery.com/">Blog</a></li>
+<li class="menu-item"><a href="https://plugins.jquery.com/">Plugins</a></li>
+<li class="menu-item"><a href="https://jquery.com/browser-support/">Browser Support</a></li>
+	</ul>
+</div>
+
+		<form method="get" class="searchform" action="http://api.jquery.com/">
+	<button type="submit" class="icon-search"><span class="visuallyhidden">search</span></button>
+	<label>
+		<span class="visuallyhidden">Search jQuery API Documentation</span>
+		<input type="text" name="s" value=""
+			placeholder="Search">
+	</label>
+</form>
+	</nav>
+
+	<div id="content-wrapper" class="clearfix row">
+
+<div class="content-right twelve columns">
+	<div id="content">
+	
+		<header class="page-header">
+			<h1 class="page-title">Category: <span>Ajax</span></h1>
+			<hr>
+			<div class="category-archive-meta"><p>The jQuery library has a full suite of Ajax capabilities. The functions and methods therein allow us to load data from the server without a browser page refresh.</p>
+</div>		</header>
+
+		
+<article id="post-13" class="post-13 post type-post status-publish format-standard hentry category-global-ajax-event-handlers category-65">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="global-ajax-event-handlers/index.html">Global Ajax Event Handlers</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../ajaxComplete/index.html" title="Permalink to .ajaxComplete()" rel="bookmark">.ajaxComplete()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Register a handler to be called when Ajax requests complete. This is an AjaxEvent.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-15" class="post-15 post type-post status-publish format-standard hentry category-global-ajax-event-handlers category-65">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="global-ajax-event-handlers/index.html">Global Ajax Event Handlers</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../ajaxError/index.html" title="Permalink to .ajaxError()" rel="bookmark">.ajaxError()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Register a handler to be called when Ajax requests complete with an error. This is an Ajax Event.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-17" class="post-17 post type-post status-publish format-standard hentry category-global-ajax-event-handlers category-65">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="global-ajax-event-handlers/index.html">Global Ajax Event Handlers</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../ajaxSend/index.html" title="Permalink to .ajaxSend()" rel="bookmark">.ajaxSend()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Attach a function to be executed before an Ajax request is sent. This is an Ajax Event.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-19" class="post-19 post type-post status-publish format-standard hentry category-global-ajax-event-handlers category-65">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="global-ajax-event-handlers/index.html">Global Ajax Event Handlers</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../ajaxStart/index.html" title="Permalink to .ajaxStart()" rel="bookmark">.ajaxStart()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Register a handler to be called when the first Ajax request begins. This is an Ajax Event.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-21" class="post-21 post type-post status-publish format-standard hentry category-global-ajax-event-handlers category-65">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="global-ajax-event-handlers/index.html">Global Ajax Event Handlers</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../ajaxStop/index.html" title="Permalink to .ajaxStop()" rel="bookmark">.ajaxStop()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Register a handler to be called when all Ajax requests have completed. This is an Ajax Event.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-23" class="post-23 post type-post status-publish format-standard hentry category-global-ajax-event-handlers category-65">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="global-ajax-event-handlers/index.html">Global Ajax Event Handlers</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../ajaxSuccess/index.html" title="Permalink to .ajaxSuccess()" rel="bookmark">.ajaxSuccess()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-291" class="post-291 post type-post status-publish format-standard hentry category-low-level-interface category-65 category-80 category-81 category-107">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="low-level-interface/index.html">Low-Level Interface</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../jQuery.ajax/index.html" title="Permalink to jQuery.ajax()" rel="bookmark">jQuery.ajax()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Perform an asynchronous HTTP (Ajax) request.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-293" class="post-293 post type-post status-publish format-standard hentry category-low-level-interface category-80">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="low-level-interface/index.html">Low-Level Interface</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../jQuery.ajaxPrefilter/index.html" title="Permalink to jQuery.ajaxPrefilter()" rel="bookmark">jQuery.ajaxPrefilter()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-295" class="post-295 post type-post status-publish format-standard hentry category-low-level-interface category-67">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="low-level-interface/index.html">Low-Level Interface</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../jQuery.ajaxSetup/index.html" title="Permalink to jQuery.ajaxSetup()" rel="bookmark">jQuery.ajaxSetup()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Set default values for future Ajax requests. Its use is not recommended.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-297" class="post-297 post type-post status-publish format-standard hentry category-low-level-interface category-80">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="low-level-interface/index.html">Low-Level Interface</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../jQuery.ajaxTransport/index.html" title="Permalink to jQuery.ajaxTransport()" rel="bookmark">jQuery.ajaxTransport()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Creates an object that handles the actual transmission of Ajax data.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-325" class="post-325 post type-post status-publish format-standard hentry category-shorthand-methods category-65 category-112-and-22 category-80">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="shorthand-methods/index.html">Shorthand Methods</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../jQuery.get/index.html" title="Permalink to jQuery.get()" rel="bookmark">jQuery.get()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Load data from the server using a HTTP GET request.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-327" class="post-327 post type-post status-publish format-standard hentry category-shorthand-methods category-65 category-80">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="shorthand-methods/index.html">Shorthand Methods</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../jQuery.getJSON/index.html" title="Permalink to jQuery.getJSON()" rel="bookmark">jQuery.getJSON()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Load JSON-encoded data from the server using a GET HTTP request.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-329" class="post-329 post type-post status-publish format-standard hentry category-shorthand-methods category-65 category-80 category-107">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="shorthand-methods/index.html">Shorthand Methods</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../jQuery.getScript/index.html" title="Permalink to jQuery.getScript()" rel="bookmark">jQuery.getScript()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Load a JavaScript file from the server using a GET HTTP request, then execute it.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-369" class="post-369 post type-post status-publish format-standard hentry category-collection-manipulation category-forms category-helper-functions category-71 category-75">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="../miscellaneous/index.html">Miscellaneous</a> &gt; <a href="../miscellaneous/collection-manipulation/index.html">Collection Manipulation</a></span><span class="category-divider"> | </span><span class="category"><a href="../forms/index.html">Forms</a></span><span class="category-divider"> | </span><span class="category"><a href="index.html">Ajax</a> &gt; <a href="helper-functions/index.html">Helper Functions</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../jQuery.param/index.html" title="Permalink to jQuery.param()" rel="bookmark">jQuery.param()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-375" class="post-375 post type-post status-publish format-standard hentry category-shorthand-methods category-65 category-112-and-22 category-80">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="shorthand-methods/index.html">Shorthand Methods</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../jQuery.post/index.html" title="Permalink to jQuery.post()" rel="bookmark">jQuery.post()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Send data to the server using a HTTP POST request.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-413" class="post-413 post type-post status-publish format-standard hentry category-shorthand-methods category-65">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="index.html">Ajax</a> &gt; <a href="shorthand-methods/index.html">Shorthand Methods</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../load/index.html" title="Permalink to .load()" rel="bookmark">.load()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Load data from the server and place the returned HTML into the matched elements.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-535" class="post-535 post type-post status-publish format-standard hentry category-forms category-helper-functions category-65">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="../forms/index.html">Forms</a></span><span class="category-divider"> | </span><span class="category"><a href="index.html">Ajax</a> &gt; <a href="helper-functions/index.html">Helper Functions</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../serialize/index.html" title="Permalink to .serialize()" rel="bookmark">.serialize()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Encode a set of form elements as a string for submission.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+<article id="post-537" class="post-537 post type-post status-publish format-standard hentry category-forms category-helper-functions category-71">
+	<header class="entry-header">
+		<div class="entry-meta">
+			Also in: <span class="category"><a href="../forms/index.html">Forms</a></span><span class="category-divider"> | </span><span class="category"><a href="index.html">Ajax</a> &gt; <a href="helper-functions/index.html">Helper Functions</a></span>		</div>
+					<h1 class="entry-title">
+				<a href="../../serializeArray/index.html" title="Permalink to .serializeArray()" rel="bookmark">.serializeArray()</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>Encode a set of form elements as an array of names and values.</p>
+	</div><!-- .entry-summary -->
+</article>
+
+		<div class="pagination"></div>
+		</div>
+
+	<div id="sidebar" class="widget-area" role="complementary">
+	<aside id="categories" class="widget">
+		<ul>
+				<li class="cat-item cat-item-1 current-cat"><a href="index.html" >Ajax</a>
+<ul class='children'>
+	<li class="cat-item cat-item-2"><a href="global-ajax-event-handlers/index.html" >Global Ajax Event Handlers</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="helper-functions/index.html" >Helper Functions</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="low-level-interface/index.html" >Low-Level Interface</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="shorthand-methods/index.html" >Shorthand Methods</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-6"><a href="../attributes/index.html" >Attributes</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../callbacks-object/index.html" >Callbacks Object</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../core/index.html" >Core</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../css/index.html" >CSS</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../data/index.html" >Data</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../deferred-object/index.html" >Deferred Object</a>
+</li>
+	<li class="cat-item cat-item-87"><a href="../deprecated/index.html" >Deprecated</a>
+<ul class='children'>
+	<li class="cat-item cat-item-90"><a href="../deprecated/deprecated-1.3/index.html" >Deprecated 1.3</a>
+</li>
+	<li class="cat-item cat-item-88"><a href="../deprecated/deprecated-1.7/index.html" >Deprecated 1.7</a>
+</li>
+	<li class="cat-item cat-item-89"><a href="../deprecated/deprecated-1.8/index.html" >Deprecated 1.8</a>
+</li>
+	<li class="cat-item cat-item-94"><a href="../deprecated/deprecated-1.9/index.html" >Deprecated 1.9</a>
+</li>
+	<li class="cat-item cat-item-93"><a href="../deprecated/deprecated-1.10/index.html" >Deprecated 1.10</a>
+</li>
+	<li class="cat-item cat-item-98"><a href="../deprecated/deprecated-3.0/index.html" >Deprecated 3.0</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="../deprecated/deprecated-3.2/index.html" >Deprecated 3.2</a>
+</li>
+	<li class="cat-item cat-item-99"><a href="../deprecated/deprecated-3.3/index.html" >Deprecated 3.3</a>
+</li>
+	<li class="cat-item cat-item-100"><a href="../deprecated/deprecated-3.4/index.html" >Deprecated 3.4</a>
+</li>
+	<li class="cat-item cat-item-102"><a href="../deprecated/deprecated-3.5/index.html" >Deprecated 3.5</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-12"><a href="../dimensions/index.html" >Dimensions</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../effects/index.html" >Effects</a>
+<ul class='children'>
+	<li class="cat-item cat-item-14"><a href="../effects/basics/index.html" >Basics</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../effects/custom-effects/index.html" >Custom</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../effects/fading/index.html" >Fading</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../effects/sliding/index.html" >Sliding</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-18"><a href="../events/index.html" >Events</a>
+<ul class='children'>
+	<li class="cat-item cat-item-19"><a href="../events/browser-events/index.html" >Browser Events</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../events/document-loading/index.html" >Document Loading</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../events/event-handler-attachment/index.html" >Event Handler Attachment</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../events/event-object/index.html" >Event Object</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../events/form-events/index.html" >Form Events</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="../events/keyboard-events/index.html" >Keyboard Events</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="../events/mouse-events/index.html" >Mouse Events</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-26"><a href="../forms/index.html" >Forms</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="../internals/index.html" >Internals</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="../manipulation/index.html" >Manipulation</a>
+<ul class='children'>
+	<li class="cat-item cat-item-29"><a href="../manipulation/class-attribute/index.html" >Class Attribute</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="../manipulation/copying/index.html" >Copying</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="../manipulation/dom-insertion-around/index.html" >DOM Insertion, Around</a>
+</li>
+	<li class="cat-item cat-item-33"><a href="../manipulation/dom-insertion-inside/index.html" >DOM Insertion, Inside</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="../manipulation/dom-insertion-outside/index.html" >DOM Insertion, Outside</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="../manipulation/dom-removal/index.html" >DOM Removal</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="../manipulation/dom-replacement/index.html" >DOM Replacement</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="../manipulation/general-attributes/index.html" >General Attributes</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="../manipulation/style-properties/index.html" >Style Properties</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-39"><a href="../miscellaneous/index.html" >Miscellaneous</a>
+<ul class='children'>
+	<li class="cat-item cat-item-40"><a href="../miscellaneous/collection-manipulation/index.html" >Collection Manipulation</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="../miscellaneous/data-storage/index.html" >Data Storage</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="../miscellaneous/dom-element-methods/index.html" >DOM Element Methods</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="../miscellaneous/setup-methods/index.html" >Setup Methods</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-44"><a href="../offset/index.html" >Offset</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="../properties/index.html" >Properties</a>
+<ul class='children'>
+	<li class="cat-item cat-item-46"><a href="../properties/jquery-object-instance-properties/index.html" >Properties of jQuery Object Instances</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="../properties/global-jquery-object-properties/index.html" >Properties of the Global jQuery Object</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-92"><a href="../removed/index.html" >Removed</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="../selectors/index.html" >Selectors</a>
+<ul class='children'>
+	<li class="cat-item cat-item-49"><a href="../selectors/attribute-selectors/index.html" >Attribute</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="../selectors/basic-css-selectors/index.html" >Basic</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="../selectors/basic-filter-selectors/index.html" >Basic Filter</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="../selectors/child-filter-selectors/index.html" >Child Filter</a>
+</li>
+	<li class="cat-item cat-item-53"><a href="../selectors/content-filter-selector/index.html" >Content Filter</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="../selectors/form-selectors/index.html" >Form</a>
+</li>
+	<li class="cat-item cat-item-55"><a href="../selectors/hierarchy-selectors/index.html" >Hierarchy</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="../selectors/jquery-selector-extensions/index.html" >jQuery Extensions</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="../selectors/visibility-filter-selectors/index.html" >Visibility Filter</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-58"><a href="../traversing/index.html" >Traversing</a>
+<ul class='children'>
+	<li class="cat-item cat-item-59"><a href="../traversing/filtering/index.html" >Filtering</a>
+</li>
+	<li class="cat-item cat-item-60"><a href="../traversing/miscellaneous-traversal/index.html" >Miscellaneous Traversing</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="../traversing/tree-traversal/index.html" >Tree Traversal</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-63"><a href="../utilities/index.html" >Utilities</a>
+</li>
+	<li class="cat-item cat-item-64"><a href="../version/index.html" >Version</a>
+<ul class='children'>
+	<li class="cat-item cat-item-65"><a href="../version/1.0/index.html" >Version 1.0</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="../version/1.0.4/index.html" >Version 1.0.4</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="../version/1.1/index.html" >Version 1.1</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="../version/1.1.2/index.html" >Version 1.1.2</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="../version/1.1.3/index.html" >Version 1.1.3</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="../version/1.1.4/index.html" >Version 1.1.4</a>
+</li>
+	<li class="cat-item cat-item-71"><a href="../version/1.2/index.html" >Version 1.2</a>
+</li>
+	<li class="cat-item cat-item-72"><a href="../version/1.2.3/index.html" >Version 1.2.3</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="../version/1.2.6/index.html" >Version 1.2.6</a>
+</li>
+	<li class="cat-item cat-item-74"><a href="../version/1.3/index.html" >Version 1.3</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="../version/1.4/index.html" >Version 1.4</a>
+</li>
+	<li class="cat-item cat-item-76"><a href="../version/1.4.1/index.html" >Version 1.4.1</a>
+</li>
+	<li class="cat-item cat-item-77"><a href="../version/1.4.2/index.html" >Version 1.4.2</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="../version/1.4.3/index.html" >Version 1.4.3</a>
+</li>
+	<li class="cat-item cat-item-79"><a href="../version/1.4.4/index.html" >Version 1.4.4</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="../version/1.5/index.html" >Version 1.5</a>
+</li>
+	<li class="cat-item cat-item-81"><a href="../version/1.5.1/index.html" >Version 1.5.1</a>
+</li>
+	<li class="cat-item cat-item-82"><a href="../version/1.6/index.html" >Version 1.6</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="../version/1.7/index.html" >Version 1.7</a>
+</li>
+	<li class="cat-item cat-item-84"><a href="../version/1.8/index.html" >Version 1.8</a>
+</li>
+	<li class="cat-item cat-item-86"><a href="../version/1.9/index.html" >Version 1.9</a>
+</li>
+	<li class="cat-item cat-item-103"><a href="../version/1.12-and-2.2/index.html" >Version 1.12 &amp; 2.2</a>
+</li>
+	<li class="cat-item cat-item-95"><a href="../version/3.0/index.html" >Version 3.0</a>
+</li>
+	<li class="cat-item cat-item-96"><a href="../version/3.1/index.html" >Version 3.1</a>
+</li>
+	<li class="cat-item cat-item-104"><a href="../version/3.2/index.html" >Version 3.2</a>
+</li>
+	<li class="cat-item cat-item-105"><a href="../version/3.3/index.html" >Version 3.3</a>
+</li>
+	<li class="cat-item cat-item-106"><a href="../version/3.4/index.html" >Version 3.4</a>
+</li>
+	<li class="cat-item cat-item-107"><a href="../version/3.5/index.html" >Version 3.5</a>
+</li>
+</ul>
+</li>
+		</ul>
+	</aside>
+</div>
+</div>
+
+	</div>
+</div>
+
+<footer class="clearfix simple">
+	<div class="constrain">
+		<div class="row">
+			<div class="six columns offset-by-three">
+				<h3><span>Books</span></h3>
+				<ul class="books">
+					<li>
+						<a href="https://www.packtpub.com/web-development/learning-jquery-fourth-edition">
+							<img src="../../jquery-wp-content/themes/jquery/content/books/learning-jquery-4th-ed.jpg" alt="Learning jQuery 4th Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114">
+							Learning jQuery Fourth Edition
+							<cite>Karl Swedberg and Jonathan Chaffer</cite>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.manning.com/books/jquery-in-action-third-edition">
+							<img src="../../jquery-wp-content/themes/jquery/content/books/jquery-in-action.jpg" alt="jQuery in Action by Bear Bibeault, Yehuda Katz, and Aurelio De Rosa" width="92" height="114">
+							jQuery in Action
+							<cite>Bear Bibeault, Yehuda Katz, and Aurelio De Rosa</cite>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.syncfusion.com/ebooks/jquery">
+							<img src="../../jquery-wp-content/themes/jquery/content/books/jquery-succinctly.jpg" alt="jQuery Succinctly by Cody Lindley" width="92" height="114">
+							jQuery Succinctly
+							<cite>Cody Lindley</cite>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		
+<div id="legal">
+	<ul class="footer-site-links">
+			<li><a class="icon-pencil" href="https://learn.jquery.com/">Learning Center</a></li>
+			<li><a class="icon-group" href="https://forum.jquery.com/">Forum</a></li>
+			<li><a class="icon-wrench" href="../../index.html">API</a></li>
+			<li><a class="icon-twitter" href="https://twitter.com/jquery">Twitter</a></li>
+			<li><a class="icon-comments" href="https://irc.jquery.org/">IRC</a></li>
+			<li><a class="icon-github" href="https://github.com/jquery">GitHub</a></li>
+	</ul>
+	<p class="copyright">
+		Copyright 2022 <a href="https://openjsf.org/">OpenJS Foundation</a> and jQuery contributors. All rights reserved. See <a href="https://jquery.org/license/">jQuery License</a> for more information. The <a href="https://openjsf.org/">OpenJS Foundation</a> has registered trademarks and uses trademarks. For a list of trademarks of the <a href="https://openjsf.org/">OpenJS Foundation</a>, please see our <a href="https://trademark-policy.openjsf.org/">Trademark Policy</a> and <a href="https://trademark-list.openjsf.org/">Trademark List</a>. Trademarks and logos not indicated on the <a href="https://trademark-list.openjsf.org/">list of OpenJS Foundation trademarks</a> are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them. OpenJS Foundation <a href="https://terms-of-use.openjsf.org/">Terms of Use</a>, <a href="https://privacy-policy.openjsf.org/">Privacy</a>, and <a href="https://www.linuxfoundation.org/cookies">Cookie</a> Policies also apply.
+		<span class="sponsor-line"><a href="https://www.digitalocean.com/" class="do-link">Web hosting by Digital Ocean</a> | <a href="https://www.stackpath.com/" class="sp-link">CDN by StackPath</a></span>
+	</p>
+</div>
+
+	</div>
+</footer>
+
+<script type='text/javascript' src='../../wp-includes/js/wp-embed.min3428.js?ver=4.5.2'></script>
+	<!-- at the end of the BODY -->
+	<script type="text/javascript" src="../../../cdn.jsdelivr.net/npm/docsearch.js%402/dist/cdn/docsearch.min.js"  onload="document.querySelector('input[name=\'s\']') && docsearch({apiKey: '3cfde9aca378c8aab554d5bf1b23489b',
+		indexName: 'jquery',
+		inputSelector: 'input[name=\'s\']',
+		debug: true // Set debug to true if you want to inspect the dropdown
+	})" async></script>
+</body>
+
+<!-- Mirrored from api.jquery.com/category/ajax/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 11:01:00 GMT -->
+</html>

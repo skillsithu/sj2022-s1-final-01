@@ -1,0 +1,10 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/idbdatabase/onversionchange/index.md
+
+# Original Wiki contributors
+sideshowbarker
+wbamberg
+CITguy
+fscholz
+jpmedley
+chrisdavidmills

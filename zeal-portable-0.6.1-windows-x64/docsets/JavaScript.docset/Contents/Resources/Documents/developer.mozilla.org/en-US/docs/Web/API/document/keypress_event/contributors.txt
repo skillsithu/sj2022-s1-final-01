@@ -1,0 +1,24 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/document/keypress_event/index.md
+
+# Original Wiki contributors
+wbamberg
+chrisdavidmills
+dima74
+mfluehr
+wizardhag
+sonimadhuri
+DisorientedSpacePenguin
+artin
+fscholz
+russnicoletti
+david_ross
+Konrud
+jwhitlock
+Dikrib
+cvrebert
+teoli
+Sheppy
+ethertank
+circusbred
+louisremi

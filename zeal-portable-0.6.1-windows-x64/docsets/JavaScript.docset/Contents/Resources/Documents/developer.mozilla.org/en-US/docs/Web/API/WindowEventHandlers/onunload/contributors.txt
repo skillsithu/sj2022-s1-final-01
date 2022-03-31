@@ -1,0 +1,24 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/windoweventhandlers/onunload/index.md
+
+# Original Wiki contributors
+sideshowbarker
+mfluehr
+GroundPound
+fscholz
+erikadoyle
+teoli
+Taken
+Shhac
+kscarfone
+Sheppy
+oncletom
+illused
+ziyunfei
+vor0nwe
+BenB
+Potappo
+Lenatis
+Jabez
+Nickolay
+alecananian

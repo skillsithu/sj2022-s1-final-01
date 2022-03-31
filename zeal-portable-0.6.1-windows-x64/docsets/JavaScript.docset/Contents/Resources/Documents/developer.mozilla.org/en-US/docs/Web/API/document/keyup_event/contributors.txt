@@ -1,0 +1,21 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/document/keyup_event/index.md
+
+# Original Wiki contributors
+dd-pardal
+mfuji09
+mfluehr
+chrisdavidmills
+daanheskes
+irenesmith
+oandreyev
+NikiH
+DisorientedSpacePenguin
+olsonpm
+artin
+fscholz
+teoli
+Sheppy
+ethertank
+DaveJ
+louisremi

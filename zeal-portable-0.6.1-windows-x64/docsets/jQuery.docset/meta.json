@@ -1,0 +1,9 @@
+{
+    "extra": {
+        "isJavaScriptEnabled": true
+    },
+    "name": "jQuery",
+    "revision": "2",
+    "title": "jQuery",
+    "version": "3.6.0"
+}

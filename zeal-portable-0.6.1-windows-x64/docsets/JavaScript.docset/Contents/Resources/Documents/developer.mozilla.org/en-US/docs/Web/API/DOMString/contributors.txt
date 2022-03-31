@@ -1,0 +1,20 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/domstring/index.md
+
+# Original Wiki contributors
+gregprice
+mfuji09
+alattalatta
+mfluehr
+jsx
+Riptrip
+chrisdavidmills
+Freya716
+Delapouite
+teoli
+Annevk
+fusionchess
+kscarfone
+ethertank
+Sheppy
+Brettz9

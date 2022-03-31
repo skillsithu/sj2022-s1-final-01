@@ -1,0 +1,17 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/html/element/basefont/index.md
+
+# Original Wiki contributors
+Sheppy
+teoli
+erikadoyle
+fscholz
+kscarfone
+avsaro
+ethertank
+cers
+jswisher
+George3
+Mgjbot
+PablO
+Ptak82

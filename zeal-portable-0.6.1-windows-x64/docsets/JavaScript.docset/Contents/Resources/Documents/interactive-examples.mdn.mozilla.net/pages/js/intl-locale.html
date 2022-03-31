@@ -1,0 +1,51 @@
+<html><!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/intl-locale.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:58:50 GMT --><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>JavaScript Demo: Intl.Locale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../css/codemirror-5-50-2114d.css?v=a857922" rel="stylesheet">
+  <link href="../../css/editor-js114d.css?v=a857922" rel="stylesheet">
+  
+</head>
+
+<body>
+  <section id="static">
+    <pre><code id="static-js" data-height="">const korean = new Intl.Locale('ko', {
+  script: 'Kore', region: 'KR', hourCycle: 'h24', calendar: 'gregory'
+});
+
+const japanese = new Intl.Locale('ja-Jpan-JP-u-ca-japanese-hc-h12');
+
+console.log(korean.baseName, japanese.baseName);
+// expected output: "ko-Kore-KR" "ja-Jpan-JP"
+
+console.log(korean.hourCycle, japanese.hourCycle);
+// expected output: "h24" "h12"
+</code></pre>
+  </section>
+
+  <section id="live" class="live hidden">
+    <header>
+      <h4>JavaScript Demo: Intl.Locale</h4>
+    </header>
+    <div id="editor" class="editor"></div>
+
+    <div class="output-container">
+      <div class="buttons-container">
+        <button id="execute" class="button run" type="button">Run ›</button>
+        <button id="reset" type="button" class="button">Reset</button>
+      </div>
+      <div id="console" class="output"><code></code></div>
+    </div>
+  </section>
+
+  
+
+  <script src="../../js/codemirror-5-50-2114d.js?v=a857922"></script>
+  <script src="../../js/editor-js114d.js?v=a857922"></script>
+
+
+
+<!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/intl-locale.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:58:50 GMT -->
+
+</body></html>

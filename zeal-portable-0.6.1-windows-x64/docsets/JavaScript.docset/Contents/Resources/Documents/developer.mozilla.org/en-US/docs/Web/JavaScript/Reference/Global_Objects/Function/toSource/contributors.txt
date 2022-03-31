@@ -1,0 +1,23 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/javascript/reference/global_objects/function/tosource/index.md
+
+# Original Wiki contributors
+mfuji09
+fscholz
+JamesCatt
+evilpie
+mfluehr
+nrebhun
+eduardoboucas
+teoli
+Mingun
+denim2x
+rvighne
+Sheppy
+ethertank
+techlivezheng
+Mgjbot
+Waldo
+Sevenspade
+Maian
+Dria

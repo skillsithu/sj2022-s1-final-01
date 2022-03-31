@@ -1,0 +1,11 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/filereader/onload/index.md
+
+# Original Wiki contributors
+nujabes403
+nongomacoders
+fscholz
+prateekrbhutani
+teoli
+mrenty
+nihey

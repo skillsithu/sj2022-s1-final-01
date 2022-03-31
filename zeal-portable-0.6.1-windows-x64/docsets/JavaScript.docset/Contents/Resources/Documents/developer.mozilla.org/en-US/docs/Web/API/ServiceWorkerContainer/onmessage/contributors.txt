@@ -1,0 +1,13 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/serviceworkercontainer/onmessage/index.md
+
+# Original Wiki contributors
+Wind1808
+anlex-N
+wbamberg
+sideshowbarker
+fscholz
+abbycar
+jpmedley
+chrisdavidmills
+kscarfone

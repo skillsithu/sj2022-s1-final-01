@@ -1,0 +1,17 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/javascript/reference/global_objects/uneval/index.md
+
+# Original Wiki contributors
+ExE-Boss
+fscholz
+Zearin_Galaurum
+SphinxKnight
+nmve
+eduardoboucas
+Dan-Dascalescu
+x2357
+MatthewKastor
+Sheppy
+ethertank
+daniel_kontos
+Jens_Verneuer

@@ -1,0 +1,28 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/navigator/battery/index.md
+
+# Original Wiki contributors
+alattalatta
+mfuji09
+Harmonickey
+bershanskiy
+sideshowbarker
+connorshea
+saldor
+Sheppy
+teoli
+Sebastianz
+samboe
+franciov
+MHasan
+kscarfone
+Prachi_Dighe
+Jeremie
+mkato
+pstadler
+dbruant
+fscholz
+ziyunfei
+pimvdb
+designaholic
+evilpie

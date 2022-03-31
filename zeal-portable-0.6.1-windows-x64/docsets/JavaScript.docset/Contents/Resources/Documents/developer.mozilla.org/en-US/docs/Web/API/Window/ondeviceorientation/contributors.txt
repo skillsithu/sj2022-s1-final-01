@@ -1,0 +1,14 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/window/ondeviceorientation/index.md
+
+# Original Wiki contributors
+jpmedley
+fscholz
+teoli
+cpigat
+jsx
+libreGeekingKid
+dtbwije
+Jeremie
+Sheppy
+kohei.yoshino

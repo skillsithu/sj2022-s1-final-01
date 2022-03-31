@@ -1,0 +1,57 @@
+<html><!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/expressions-objectinitializer.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:51:29 GMT --><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>JavaScript Demo: Expressions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../css/codemirror-5-50-2114d.css?v=a857922" rel="stylesheet">
+  <link href="../../css/editor-js114d.css?v=a857922" rel="stylesheet">
+  
+</head>
+
+<body>
+  <section id="static">
+    <pre><code id="static-js" data-height="taller">const object1 = { a: 'foo', b: 42, c: {} };
+
+console.log(object1.a);
+// expected output: "foo"
+
+const a = 'foo';
+const b = 42;
+const c = {};
+const object2 = { a: a, b: b, c: c };
+
+console.log(object2.b);
+// expected output: 42
+
+const object3 = { a, b, c };
+
+console.log(object3.a);
+// expected output: "foo"
+</code></pre>
+  </section>
+
+  <section id="live" class="live hidden">
+    <header>
+      <h4>JavaScript Demo: Expressions - Object initializer</h4>
+    </header>
+    <div id="editor" class="editor"></div>
+
+    <div class="output-container">
+      <div class="buttons-container">
+        <button id="execute" class="button run" type="button">Run ›</button>
+        <button id="reset" type="button" class="button">Reset</button>
+      </div>
+      <div id="console" class="output"><code></code></div>
+    </div>
+  </section>
+
+  
+
+  <script src="../../js/codemirror-5-50-2114d.js?v=a857922"></script>
+  <script src="../../js/editor-js114d.js?v=a857922"></script>
+
+
+
+<!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/expressions-objectinitializer.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:51:29 GMT -->
+
+</body></html>

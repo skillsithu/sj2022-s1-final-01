@@ -1,0 +1,16 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/css/-moz-context-properties/index.md
+
+# Original Wiki contributors
+mfuji09
+Sheppy
+wbamberg
+ddbeck
+chrisdavidmills
+teoli
+ExE-Boss
+fscholz
+mfluehr
+robinwhittleton
+Jonathan_Watt
+sfoster

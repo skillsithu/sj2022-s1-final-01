@@ -1,0 +1,16 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/learn/javascript/asynchronous/async_await/index.md
+
+# Original Wiki contributors
+chrisdavidmills
+prosovskyf
+hexagonrecursion
+SUM1
+ReedyBear
+tim_cannon
+Flimm
+kruschk
+enejko
+Sheppy
+tashpool
+wcarlson-va

@@ -1,0 +1,78 @@
+<html><!-- Mirrored from mdn.github.io/css-examples/css-cookbook/breadcrumb-navigation.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 11:23:54 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+    <meta charset="utf-8">
+    <title>CSS Cookbook: Breadcrumb Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .breadcrumb ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .breadcrumb a,
+        .breadcrumb span {
+            padding: .5em 1em;
+        }
+
+    </style>
+
+    <style class="editable">
+        .breadcrumb ul {
+            display: flex;
+        }
+
+        .breadcrumb li::before {
+            content: "→";
+        }
+
+        .breadcrumb li:first-child::before {
+            content: "";
+        }
+    </style>
+</head>
+
+<body>
+    <section class="preview">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Sub-Category</a></li>
+                <li><span aria-current="page">Product</span></li>
+            </ul>
+        </nav>
+    </section>
+
+    <textarea class="playable playable-css" style="height: 210px;">.breadcrumb ul {
+    display: flex;
+}
+    
+.breadcrumb li::before {
+    content: "→";
+}
+    
+.breadcrumb li:first-child::before {
+    content: "";
+}
+    </textarea>
+
+    <textarea class="playable playable-html" style="height: 170px;">&lt;nav aria-label="Breadcrumb" class="breadcrumb"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Category&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Sub-Category&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span aria-current="page"&gt;Product&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+    </textarea>
+
+    <div class="playable-buttons">
+        <input id="reset" type="button" value="Reset">
+    </div>
+
+<script src="playable.js"></script>
+
+
+<!-- Mirrored from mdn.github.io/css-examples/css-cookbook/breadcrumb-navigation.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 11:23:54 GMT -->
+</body></html>

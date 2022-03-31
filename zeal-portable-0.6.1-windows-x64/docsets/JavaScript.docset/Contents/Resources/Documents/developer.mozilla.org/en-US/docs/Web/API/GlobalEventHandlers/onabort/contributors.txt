@@ -1,0 +1,22 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/globaleventhandlers/onabort/index.md
+
+# Original Wiki contributors
+mfluehr
+fscholz
+anthumchris
+jpmedley
+cvrebert
+teoli
+kosvrouvas
+kscarfone
+ethertank
+Sheppy
+jswisher
+Djc8080
+BenB
+Mgjbot
+Nickolay
+Jabez
+Dria
+JesseW

@@ -1,0 +1,21 @@
+<html><!-- Mirrored from mdn.github.io/webassembly-examples/js-api-examples/instantiate-streaming.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:51:11 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+
+    <meta charset="utf-8">
+    <title>WASM instantiateStreaming() test</title>
+  </head>
+
+  <body>
+
+
+    <script>
+      var importObject = { imports: { imported_func: arg => console.log(arg) } };
+
+      WebAssembly.instantiateStreaming(fetch('simple.wasm'), importObject)
+      .then(obj => obj.instance.exports.exported_func());
+    </script>
+  
+
+
+<!-- Mirrored from mdn.github.io/webassembly-examples/js-api-examples/instantiate-streaming.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 18:51:11 GMT -->
+
+</body></html>

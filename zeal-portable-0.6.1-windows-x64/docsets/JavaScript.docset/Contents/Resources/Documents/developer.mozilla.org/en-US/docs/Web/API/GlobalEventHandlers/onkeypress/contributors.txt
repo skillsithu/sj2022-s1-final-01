@@ -1,0 +1,27 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/globaleventhandlers/onkeypress/index.md
+
+# Original Wiki contributors
+chrisdavidmills
+mfluehr
+sideshowbarker
+ivanson
+fscholz
+madmurphy
+erikadoyle
+jpmedley
+cvrebert
+Sebastianz
+teoli
+SphinxKnight
+fusionchess
+kscarfone
+Sheppy
+ethertank
+Niggler
+ziyunfei
+BenoitL
+Pitoutompoilu
+PointedEars
+Dria
+JesseW

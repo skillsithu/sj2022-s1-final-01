@@ -1,0 +1,9 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/xmlhttprequest/how_to_check_the_secruity_state_of_an_xmlhttprequest_over_ssl/index.md
+
+# Original Wiki contributors
+maulikkothari92
+Jeremie
+teoli
+briansmith2
+vladimir.dzhuvinov

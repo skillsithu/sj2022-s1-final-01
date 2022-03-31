@@ -1,0 +1,13 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/canvasimagesource/index.md
+
+# Original Wiki contributors
+severo
+mfluehr
+sideshowbarker
+Nektro
+jpmedley
+Mehran-Shakerinava
+Jeremie
+fscholz
+teoli

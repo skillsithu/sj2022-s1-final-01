@@ -1,0 +1,16 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/css/css_animations/detecting_css_animation_support/index.md
+
+# Original Wiki contributors
+mfuji09
+wbamberg
+dijonkitchen
+mfluehr
+MexieAndCo
+fscholz
+teoli
+bonbonez
+Jeremie
+mzki
+Sheppy
+codepo8

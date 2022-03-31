@@ -1,0 +1,10 @@
+# Contributors by commit history
+https://github.com/mdn/content/commits/main/files/en-us/web/api/idbenvironmentsync/index.md
+
+# Original Wiki contributors
+chrisdavidmills
+fscholz
+teoli
+pdm
+khushboo_Dwivedi
+jswisher

@@ -1,0 +1,61 @@
+<html><!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/proxyhandler-getprototypeof.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 19:11:12 GMT --><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>JavaScript Demo: handler.getPrototypeOf()</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../css/codemirror-5-50-2114d.css?v=a857922" rel="stylesheet">
+  <link href="../../css/editor-js114d.css?v=a857922" rel="stylesheet">
+  
+</head>
+
+<body>
+  <section id="static">
+    <pre><code id="static-js" data-height="taller">const monster1 = {
+  eyeCount: 4
+};
+
+const monsterPrototype = {
+  eyeCount: 2
+};
+
+const handler = {
+  getPrototypeOf(target) {
+    return monsterPrototype;
+  }
+};
+
+const proxy1 = new Proxy(monster1, handler);
+
+console.log(Object.getPrototypeOf(proxy1) === monsterPrototype);
+// expected output: true
+
+console.log(Object.getPrototypeOf(proxy1).eyeCount);
+// expected output: 2
+</code></pre>
+  </section>
+
+  <section id="live" class="live hidden">
+    <header>
+      <h4>JavaScript Demo: handler.getPrototypeOf()</h4>
+    </header>
+    <div id="editor" class="editor"></div>
+
+    <div class="output-container">
+      <div class="buttons-container">
+        <button id="execute" class="button run" type="button">Run ›</button>
+        <button id="reset" type="button" class="button">Reset</button>
+      </div>
+      <div id="console" class="output"><code></code></div>
+    </div>
+  </section>
+
+  
+
+  <script src="../../js/codemirror-5-50-2114d.js?v=a857922"></script>
+  <script src="../../js/editor-js114d.js?v=a857922"></script>
+
+
+
+<!-- Mirrored from interactive-examples.mdn.mozilla.net/pages/js/proxyhandler-getprototypeof.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 19:11:12 GMT -->
+
+</body></html>
