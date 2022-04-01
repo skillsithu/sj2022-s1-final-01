@@ -1,0 +1,27 @@
+Cím:
+
+London Eye
+
+
+
+Értékelés:
+
+2.90
+
+
+
+Főkép:
+
+http://localhost:8080/img/poi/london-eye/london-eye.png
+
+
+
+Leírás:
+
+A London Eye (magyarul kb. Londoni szem vagy London szeme) más néven Millenniumi Kerék egy óriáskerék Londonban, melynek építését az EDF Energy szponzorálta. 1999-ben készült el, a nagyközönség számára 2000 márciusában nyitották meg. Eleinte a British Airways, később a Merlin Entertainments mint főszponzor nevét viselte. 2006 májusáig ez volt a világ legmagasabb óriáskereke. Ekkor adták át Nancsangban a Nancsang csillaga nevű, 160 m magas óriáskereket. A London Eye 135 m magas, és a Jubilee Gardens nyugati, a Temze keleti partján, Lambethben fekszik, a Westminster és a Hungerford híd között.
+
+Galéria:
+http://localhost:8080/img/poi/london-eye/london-eye-01.png
+http://localhost:8080/img/poi/london-eye/london-eye-02.png
+http://localhost:8080/img/poi/london-eye/london-eye-03.png
+http://localhost:8080/img/poi/london-eye/london-eye-04.png

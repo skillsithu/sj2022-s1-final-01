@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get("poi/random",[\App\Http\Controllers\PoiController::class, "random"]);
+Route::post("rating",[\App\Http\Controllers\RatingController::class, "store"]);
+Route::post("booking",[\App\Http\Controllers\BookingController::class, "store"]);

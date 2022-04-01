@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PoiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $path = public_path("london.html");
+
+    ob_start();
+    include $path;
+    return ob_get_clean();;
 });
+
+
